@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
+    "C:\\Users\\nimap\\Downloads\\modified_GrowerTech_final\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
   },
   "projects": {
-    "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
+    "C:\\Users\\nimap\\Downloads\\modified_GrowerTech_final\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectUniqueName": "C:\\Users\\nimap\\Downloads\\modified_GrowerTech_final\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "projectName": "GrowerTech-MVC",
-        "projectPath": "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectPath": "C:\\Users\\nimap\\Downloads\\modified_GrowerTech_final\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-        "outputPath": "D:\\GrowerTech4\\GrowerTech4\\.NET\\obj\\",
+        "outputPath": "C:\\Users\\nimap\\Downloads\\modified_GrowerTech_final\\GrowerTech4\\.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
