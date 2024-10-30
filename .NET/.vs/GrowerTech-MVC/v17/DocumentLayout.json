@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\growertech-mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:growertech-mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|c:\\users\\labsfiap\\downloads\\updated_project_with_api\\controllers\\testcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCC7DC8-F022-4B95-BCBF-B78F61A753B4}|GrowerTech-MVC.csproj|solutionrelative:controllers\\testcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T00:47:16.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T00:47:15.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T00:47:13.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T00:47:04.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GrowerTech-MVC",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\GrowerTech-MVC.csproj",
+              "RelativeDocumentMoniker": "GrowerTech-MVC.csproj",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\GrowerTech-MVC.csproj",
+              "RelativeToolTip": "GrowerTech-MVC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T00:46:06.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T00:35:01.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestControllers.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Controllers\\TestControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestControllers.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Downloads\\Updated_Project_with_API\\Controllers\\TestControllers.cs",
+              "RelativeToolTip": "Controllers\\TestControllers.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwCsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T00:32:35.488Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
