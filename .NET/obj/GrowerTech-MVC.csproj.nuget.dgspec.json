@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nimap\\Downloads\\e5d562053f31d251c447f3cfe33a1e68ac9b7bd0b1d5caa76b13543e402727a6\\.NET\\GrowerTech-MVC.csproj": {}
+    "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nimap\\Downloads\\e5d562053f31d251c447f3cfe33a1e68ac9b7bd0b1d5caa76b13543e402727a6\\.NET\\GrowerTech-MVC.csproj": {
+    "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nimap\\Downloads\\e5d562053f31d251c447f3cfe33a1e68ac9b7bd0b1d5caa76b13543e402727a6\\.NET\\GrowerTech-MVC.csproj",
+        "projectUniqueName": "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "projectName": "GrowerTech-MVC",
-        "projectPath": "C:\\Users\\nimap\\Downloads\\e5d562053f31d251c447f3cfe33a1e68ac9b7bd0b1d5caa76b13543e402727a6\\.NET\\GrowerTech-MVC.csproj",
+        "projectPath": "D:\\GrowerTech4\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nimap\\Downloads\\e5d562053f31d251c447f3cfe33a1e68ac9b7bd0b1d5caa76b13543e402727a6\\.NET\\obj\\",
+        "outputPath": "D:\\GrowerTech4\\GrowerTech4\\.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
