@@ -6368,11 +6368,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NET\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+      "projectUniqueName": "D:\\test1\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
       "projectName": "GrowerTech-MVC",
-      "projectPath": "D:\\NET\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+      "projectPath": "D:\\test1\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
       "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-      "outputPath": "D:\\NET\\GrowerTech4\\.NET\\obj\\",
+      "outputPath": "D:\\test1\\GrowerTech4\\.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
