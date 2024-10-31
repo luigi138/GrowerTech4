@@ -922,3 +922,9 @@ d:\GrowerTech\GrowerTech4\.NET\obj\Debug\net8.0\refint\GrowerTech-MVC.dll
 d:\GrowerTech\GrowerTech4\.NET\obj\Debug\net8.0\GrowerTech-MVC.pdb
 d:\GrowerTech\GrowerTech4\.NET\obj\Debug\net8.0\GrowerTech-MVC.genruntimeconfig.cache
 d:\GrowerTech\GrowerTech4\.NET\obj\Debug\net8.0\ref\GrowerTech-MVC.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\GrowerTech\GrowerTech4\.NET\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

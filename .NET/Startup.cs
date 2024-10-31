@@ -1,3 +1,4 @@
+using GrowerTech_MVC.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +32,7 @@ public class Startup
             options.CallbackPath = "/signin-google";
         });
 
+        services.AddScoped<UserService>(); 
         services.AddControllersWithViews();
     }
 
@@ -60,4 +62,3 @@ public class Startup
         });
     }
 }
-  

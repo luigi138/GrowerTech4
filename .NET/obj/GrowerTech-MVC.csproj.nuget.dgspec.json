@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
+    "D:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
   },
   "projects": {
-    "d:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
+    "D:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectUniqueName": "D:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "projectName": "GrowerTech-MVC",
-        "projectPath": "d:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectPath": "D:\\GrowerTech\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-        "outputPath": "d:\\GrowerTech\\GrowerTech4\\.NET\\obj\\",
+        "outputPath": "D:\\GrowerTech\\GrowerTech4\\.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,7 +52,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
@@ -70,11 +70,11 @@
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.23.40, )"
+              "version": "[8.23.60, )"
             },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
-              "version": "[23.4.0, )"
+              "version": "[23.6.0, )"
             }
           },
           "imports": [

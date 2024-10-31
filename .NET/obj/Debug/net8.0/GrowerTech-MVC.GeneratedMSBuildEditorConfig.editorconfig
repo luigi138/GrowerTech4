@@ -17,39 +17,39 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GrowerTech_MVC
 build_property.RootNamespace = GrowerTech_MVC
-build_property.ProjectDir = d:\GrowerTech\GrowerTech4\.NET\
+build_property.ProjectDir = D:\GrowerTech\GrowerTech4\.NET\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\GrowerTech\GrowerTech4\.NET
+build_property.MSBuildProjectDirectory = D:\GrowerTech\GrowerTech4\.NET
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/Home/Index.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/Home/Privacy.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/Shared/Error.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/_ViewImports.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/_ViewStart.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/GrowerTech/GrowerTech4/.NET/Views/Shared/_Layout.cshtml]
+[D:/GrowerTech/GrowerTech4/.NET/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6p88juo5in
