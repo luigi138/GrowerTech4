@@ -1,20 +1,50 @@
 ﻿@{
-    ViewData["Title"] = "Sistema de Recomendação de Insumos Agrícolas";
+    ViewData["Title"] = "GrowerTech - Agricultura Inteligente";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bem-vindo ao Sistema de Recomendação de Insumos Agrícolas</h1>
-    <p>Este é um sistema de recomendação personalizada desenvolvido para auxiliar os produtores rurais a tomar decisões mais assertivas sobre quais produtos utilizar em suas plantações.</p>
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 36px;
+        color: #333;
+    }
+    .description {
+        font-size: 18px;
+        color: #666;
+        margin: 20px 0;
+    }
+    .features {
+        text-align: left;
+        margin: 20px auto;
+        font-size: 18px;
+        color: #444;
+    }
+    .btn-primary {
+        background-color: #28a745;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .btn-primary:hover {
+        background-color: #218838;
+    }
+</style>
 
-    <h2>Descrição do Projeto</h2>
-    <p>Nosso sistema analisa dados como condições climáticas, tipos de solo, histórico de cultivos e outras variáveis relevantes para recomendar os insumos agrícolas mais adequados para cada situação específica.</p>
-
+<div class="container">
+    <h1>Bem-vindo ao GrowerTech</h1>
+    <p class="description">A plataforma inteligente para recomendações agrícolas personalizadas. Nosso sistema ajuda produtores rurais a tomar decisões mais assertivas com base em dados sobre condições climáticas, tipos de solo e histórico de cultivos.</p>
+    
     <h2>Funcionalidades Principais</h2>
-    <ul class="text-start">
-        <li><strong>Registro de Propriedades Rurais:</strong> Permite aos produtores cadastrar informações sobre suas propriedades, incluindo localização geográfica, tamanho, tipos de cultura cultivada, entre outros.</li>
-        <li><strong>Análise de Dados Agronômicos:</strong> Coleta e analisa dados sobre condições climáticas, tipos de solo, níveis de umidade, histórico de pragas e doenças, entre outras variáveis agronômicas.</li>
-        <li><strong>Recomendação de Insumos Agrícolas:</strong> Baseado na análise dos dados agronômicos, o sistema recomenda os insumos mais adequados para otimizar a produtividade e a saúde das plantações.</li>
+    <ul class="features">
+        <li><strong>Registro de Propriedades Rurais:</strong> Cadastramento detalhado de propriedades e suas características agrícolas.</li>
+        <li><strong>Análise de Dados Agronômicos:</strong> Processamento de dados sobre clima, solo e histórico para melhor produtividade.</li>
+        <li><strong>Recomendações Inteligentes:</strong> Sugestões de insumos e melhores práticas com base em IA.</li>
     </ul>
 
-    <a href="/privacy" class="btn btn-primary mt-3">Saiba mais sobre a política de privacidade</a>
+    <a href="/signin-google" class="btn btn-primary mt-3">Login com Google</a>
 </div>
