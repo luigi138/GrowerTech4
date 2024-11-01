@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
+    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
+    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
-        "projectName": "GrowerTech-MVC",
-        "projectPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectUniqueName": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests.csproj",
+        "projectName": "GrowerTech_MVC.Tests",
+        "projectPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests.csproj",
         "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\obj\\",
+        "outputPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\GrowerTech_MVC.Tests\\GrowerTech_MVC.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,35 +46,27 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.Google": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[17.11.1, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Moq": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[4.20.72, )"
             },
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "coverlet.collector": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[6.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Oracle.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.23.60, )"
-            },
-            "Oracle.ManagedDataAccess.Core": {
-              "target": "Package",
-              "version": "[23.6.0, )"
+              "version": "[2.8.2, )"
             }
           },
           "imports": [
@@ -89,9 +81,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
