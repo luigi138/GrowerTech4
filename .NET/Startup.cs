@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 
 public class Startup
 {
@@ -18,6 +20,7 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        // Configurando autenticação com Google e Cookies
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -32,7 +35,9 @@ public class Startup
             options.CallbackPath = "/signin-google";
         });
 
-        services.AddScoped<UserService>(); 
+        // Injetando a UserService com sua interface para melhor flexibilidade
+        services.AddScoped<IUserService, UserService>();
+        
         services.AddControllersWithViews();
     }
 
@@ -60,5 +65,23 @@ public class Startup
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
         });
+    }
+}
+
+// Adicionando o AccountController para gerenciar login e logout
+[Route("account")]
+public class AccountController : Controller
+{
+    [HttpGet("login")]
+    public IActionResult Login(string returnUrl = "/")
+    {
+        var properties = new AuthenticationProperties { RedirectUri = returnUrl };
+        return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+    }
+
+    [HttpGet("logout")]
+    public IActionResult Logout()
+    {
+        return SignOut(CookieAuthenticationDefaults.AuthenticationScheme);
     }
 }
