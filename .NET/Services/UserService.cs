@@ -1,20 +1,33 @@
 using GrowerTech_MVC.Models;
+using GrowerTech_MVC.Repository;
 
 namespace GrowerTech_MVC.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(ApplicationDbContext context)
+
+        public UserService(IUserRepository userRepository)
         {
-            _context = context;
+            _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
         }
 
-        public void SaveUser(User user)
+        public bool RegisterUser(User user)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
+     
+            if (user == null || string.IsNullOrEmpty(user.Email))
+            {
+                return false;
+            }
+
+            return SaveUser(user);
+        }
+
+        public bool SaveUser(User user)
+        {
+ 
+            return _userRepository.Save(user);
         }
     }
 }
