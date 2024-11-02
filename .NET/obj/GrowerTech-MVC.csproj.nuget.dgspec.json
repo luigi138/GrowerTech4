@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
+    "c:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
+    "c:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectUniqueName": "c:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "projectName": "GrowerTech-MVC",
-        "projectPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
+        "projectPath": "c:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\GrowerTech-MVC.csproj",
         "packagesPath": "C:\\Users\\nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\obj\\",
+        "outputPath": "c:\\Users\\nimap\\OneDrive\\附件\\GrowerTech2\\GrowerTech4\\.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
