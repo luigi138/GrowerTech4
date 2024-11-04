@@ -1,0 +1,28 @@
+@model IEnumerable<GrowerTech_MVC.Models.User>
+@{
+    ViewData["Title"] = "Gerenciamento de Usuários";
+}
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Usuários</h2>
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Endereço</th>
+                <th>Escala</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Address</td>
+                    <td>@user.Scale</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

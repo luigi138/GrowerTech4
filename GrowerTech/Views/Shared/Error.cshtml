@@ -1,0 +1,12 @@
+﻿@model GrowerTech_MVC.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Erro";
+}
+<div class="container mt-5 text-center">
+    <h1 class="display-4">Ops!</h1>
+    <p>Desculpe, ocorreu um erro.</p>
+    <p>
+        ID da Requisição: <strong>@Model.RequestId</strong>
+    </p>
+    <a href="/" class="btn btn-primary">Voltar para o Início</a>
+</div>

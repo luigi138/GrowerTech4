@@ -1,0 +1,26 @@
+@model IEnumerable<GrowerTech_MVC.DTO.AgricultorDTO>
+@{
+    ViewData["Title"] = "Dados Agrícolas";
+}
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Dados Agrícolas</h2>
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Escala</th>
+                <th>Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var agricultor in Model)
+            {
+                <tr>
+                    <td>@agricultor.Nome</td>
+                    <td>@agricultor.Escala</td>
+                    <td>@agricultor.Endereco</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
