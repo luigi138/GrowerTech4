@@ -1,0 +1,4 @@
+Temperature,Humidity,SoilType,Rainfall,RecommendedInput
+25.0,65.0,Sandy,100,FertilizerA
+30.0,70.0,Clay,200,FertilizerB
+22.0,60.0,Loam,150,FertilizerC
