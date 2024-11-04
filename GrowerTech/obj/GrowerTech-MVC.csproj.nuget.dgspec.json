@@ -48,7 +48,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -63,6 +63,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.ML": {
               "target": "Package",

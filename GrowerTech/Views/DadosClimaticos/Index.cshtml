@@ -1,0 +1,71 @@
+@model IEnumerable<GrowerTech_MVC.Models.DadoClimatico>
+
+@{
+    ViewData["Title"] = "Dados Climáticos";
+}
+
+<div class="container-fluid">
+    <h2>Dados Climáticos</h2>
+
+    <div class="row mb-3">
+        <div class="col">
+            <a asp-action="Dashboard" class="btn btn-primary">
+                <i class="fas fa-chart-line"></i> Dashboard
+            </a>
+            <a asp-action="Export" class="btn btn-success">
+                <i class="fas fa-download"></i> Exportar CSV
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Sensor</th>
+                            <th>Localização</th>
+                            <th>Temperatura</th>
+                            <th>Umidade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Data.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                <td>@item.Sensor.Tipo</td>
+                                <td>@item.Sensor.Localizacao</td>
+                                <td>@item.TemperaturaFormatada</td>
+                                <td>@item.UmidadeFormatada</td>
+                                <td>
+                                    @if (item.IsTemperaturaAlta())
+                                    {
+                                        <span class="badge bg-danger">Temperatura Alta</span>
+                                    }
+                                    else if (item.IsUmidadeAlta())
+                                    {
+                                        <span class="badge bg-warning">Umidade Alta</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success">Normal</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                        <i class="fas fa-info-circle"></i> Detalhes
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

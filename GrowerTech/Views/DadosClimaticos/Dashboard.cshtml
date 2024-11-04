@@ -1,0 +1,185 @@
+@model IEnumerable<GrowerTech_MVC.Models.DadoClimatico>
+
+@{
+    ViewData["Title"] = "Dashboard Climático";
+}
+
+<div class="container-fluid">
+    <h2>Dashboard Climático</h2>
+
+    <!-- 摘要卡片 -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Temperatura Média</h5>
+                    <p class="card-text h3">
+                        @Model.Average(d => d.Temperatura).ToString("F1")°C
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Umidade Média</h5>
+                    <p class="card-text h3">
+                        @Model.Average(d => d.Umidade).ToString("F1")%
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Sensores Ativos</h5>
+                    <p class="card-text h3">
+                        @Model.Select(d => d.SensorId).Distinct().Count()
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total de Medições</h5>
+                    <p class="card-text h3">
+                        @Model.Count()
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图表 -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Temperatura ao Longo do Tempo
+                </div>
+                <div class="card-body">
+                    <canvas id="temperaturaChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Umidade ao Longo do Tempo
+                </div>
+                <div class="card-body">
+                    <canvas id="umidadeChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最新数据表格 -->
+    <div class="card">
+        <div class="card-header">
+            Últimas Medições
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Sensor</th>
+                            <th>Temperatura</th>
+                            <th>Umidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderByDescending(d => d.Data).Take(10))
+                        {
+                            <tr>
+                                <td>@item.Data.ToString("HH:mm:ss")</td>
+                                <td>@item.Sensor.Tipo (@item.Sensor.Localizacao)</td>
+                                <td>@item.TemperaturaFormatada</td>
+                                <td>@item.UmidadeFormatada</td>
+                                <td>
+                                    @if (item.IsTemperaturaAlta())
+                                    {
+                                        <span class="badge bg-danger">Temperatura Alta</span>
+                                    }
+                                    else if (item.IsUmidadeAlta())
+                                    {
+                                        <span class="badge bg-warning">Umidade Alta</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success">Normal</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // 准备数据
+        const dados = @Json.Serialize(Model);
+        const tempoLabels = dados.map(d => new Date(d.data).toLocaleTimeString());
+        const temperaturas = dados.map(d => d.temperatura);
+        const umidades = dados.map(d => d.umidade);
+
+        // 温度图表
+        new Chart(document.getElementById('temperaturaChart'), {
+            type: 'line',
+            data: {
+                labels: tempoLabels,
+                datasets: [{
+                    label: 'Temperatura (°C)',
+                    data: temperaturas,
+                    borderColor: 'rgb(255, 99, 132)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // 湿度图表
+        new Chart(document.getElementById('umidadeChart'), {
+            type: 'line',
+            data: {
+                labels: tempoLabels,
+                datasets: [{
+                    label: 'Umidade (%)',
+                    data: umidades,
+                    borderColor: 'rgb(54, 162, 235)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+
+        // 每30秒自动刷新
+        setTimeout(() => {
+            window.location.reload();
+        }, 30000);
+    </script>
+}

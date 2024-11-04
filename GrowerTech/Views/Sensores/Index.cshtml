@@ -1,0 +1,55 @@
+@model IEnumerable<GrowerTech_MVC.Models.Sensor>
+
+@{
+    ViewData["Title"] = "Sensores";
+}
+
+<div class="container-fluid">
+    <h2>Sensores</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Novo Sensor</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Tipo)</th>
+                    <th>@Html.DisplayNameFor(model => model.Localizacao)</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Tipo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Localizacao)</td>
+                        <td>
+                            @if (item.IsActive())
+                            {
+                                <span class="badge bg-success">Ativo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Inativo</span>
+                            }
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                    Detalhes
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                    Editar
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

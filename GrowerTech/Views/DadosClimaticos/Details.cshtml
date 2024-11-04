@@ -1,0 +1,62 @@
+@model GrowerTech_MVC.Models.DadoClimatico
+
+@{
+    ViewData["Title"] = "Detalhes do Dado Climático";
+}
+
+<div class="container-fluid">
+    <h2>Detalhes do Dado Climático</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Informações do Sensor</h4>
+                    <dl class="row">
+                        <dt class="col-sm-4">Tipo do Sensor</dt>
+                        <dd class="col-sm-8">@Model.Sensor.Tipo</dd>
+
+                        <dt class="col-sm-4">Localização</dt>
+                        <dd class="col-sm-8">@Model.Sensor.Localizacao</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <h4>Medições</h4>
+                    <dl class="row">
+                        <dt class="col-sm-4">Data</dt>
+                        <dd class="col-sm-8">@Model.Data.ToString("dd/MM/yyyy HH:mm:ss")</dd>
+
+                        <dt class="col-sm-4">Temperatura</dt>
+                        <dd class="col-sm-8">@Model.TemperaturaFormatada</dd>
+
+                        <dt class="col-sm-4">Umidade</dt>
+                        <dd class="col-sm-8">@Model.UmidadeFormatada</dd>
+
+                        <dt class="col-sm-4">Status</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.IsTemperaturaAlta())
+                            {
+                                <span class="badge bg-danger">Temperatura Alta</span>
+                            }
+                            else if (Model.IsUmidadeAlta())
+                            {
+                                <span class="badge bg-warning">Umidade Alta</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">Normal</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="btn-group">
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

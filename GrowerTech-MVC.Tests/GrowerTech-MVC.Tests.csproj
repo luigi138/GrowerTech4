@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 项目引用 -->
+    <ProjectReference Include="..\GrowerTech\GrowerTech-MVC.csproj" />
+
+    <!-- 测试相关包 -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    
+    <!-- Mock 和断言库 -->
+    <PackageReference Include="Moq" Version="4.20.69" />
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    
+    <!-- ASP.NET Core 测试工具 -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+    
+    <!-- ML.NET 测试支持 -->
+    <PackageReference Include="Microsoft.ML" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 测试数据文件 -->
+    <None Update="TestData\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 编译时忽略警告 -->
+    <NoWarn>$(NoWarn);CS8618;CS8602;CS8604</NoWarn>
+  </ItemGroup>
+</Project>

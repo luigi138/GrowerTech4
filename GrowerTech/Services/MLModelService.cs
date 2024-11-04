@@ -9,34 +9,38 @@ namespace GrowerTech_MVC.Services
     public class MLModelService
     {
         private readonly MLContext _mlContext;
-        private ITransformer _model;
+        private ITransformer _model = null!;
         private const string ModelPath = "MLModels/agriculturalModel.zip"; 
 
         public MLModelService()
         {
             _mlContext = new MLContext();
+            LoadModel(); 
         }
 
-        // modo de treino
+        
         public void TrainModel()
         {
-            // atualizar
             IDataView dataView = _mlContext.Data.LoadFromTextFile<AgriculturalData>(
-                path: "GrowerTech4\agricultural_data.csv", 
+                path: "GrowerTech4/agricultural_data.csv",
                 hasHeader: true,
                 separatorChar: ',');
 
-            var dataProcessPipeline = _mlContext.Transforms.Concatenate("Features", nameof(AgriculturalData.SoilType), nameof(AgriculturalData.ClimateType), nameof(AgriculturalData.Humidity))
-                                           .Append(_mlContext.Transforms.NormalizeMinMax("Features"));
+            var dataProcessPipeline = _mlContext.Transforms.Concatenate("Features",
+                nameof(AgriculturalData.Temperature),
+                nameof(AgriculturalData.Humidity),
+                nameof(AgriculturalData.SoilPH),
+                nameof(AgriculturalData.Rainfall),
+                nameof(AgriculturalData.CropType))
+                .Append(_mlContext.Transforms.NormalizeMinMax("Features"));
 
-            // treino
-            var trainer = _mlContext.Regression.Trainers.Sdca(labelColumnName: nameof(AgriculturalData.RecommendedInput), featureColumnName: "Features");
+            var trainer = _mlContext.MulticlassClassification.Trainers.SdcaMaximumEntropy(
+                labelColumnName: nameof(AgriculturalRecommendation.RecommendedInput),
+                featureColumnName: "Features");
+            
             var trainingPipeline = dataProcessPipeline.Append(trainer);
 
-            // treinar
             _model = trainingPipeline.Fit(dataView);
-
-            // save
             _mlContext.Model.Save(_model, dataView.Schema, ModelPath);
         }
 

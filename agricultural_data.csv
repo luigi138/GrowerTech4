@@ -1,4 +1,6 @@
-Temperature,Humidity,SoilType,Rainfall,RecommendedInput
-25.0,65.0,Sandy,100,FertilizerA
-30.0,70.0,Clay,200,FertilizerB
-22.0,60.0,Loam,150,FertilizerC
+Temperature,Humidity,SoilPH,Rainfall,CropType,RecommendedInput
+25.5,65.0,6.5,1200.5,Rice,
+28.0,70.0,7.0,1000.0,Corn,
+22.0,60.0,6.0,800.0,Wheat,
+24.0,75.0,6.8,1500.0,Rice,
+27.0,68.0,7.2,900.0,Corn,

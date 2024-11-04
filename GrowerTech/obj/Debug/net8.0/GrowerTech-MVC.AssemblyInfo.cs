@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrowerTech-MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ef5766870b0a99fc7ae62b8a2322322f0616621")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190e9a1ff520f3424d559f6c69c0ae083788e758")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrowerTech-MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrowerTech-MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
