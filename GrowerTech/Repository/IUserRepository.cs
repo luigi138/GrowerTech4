@@ -1,11 +1,13 @@
 using GrowerTech_MVC.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GrowerTech_MVC.Repository
 {
     public interface IUserRepository
     {
         bool Save(User user);
-        User GetUserByEmail(string email);
+        User? GetUserByEmail(string email); 
     }
 
     public class UserRepository : IUserRepository
@@ -18,7 +20,7 @@ namespace GrowerTech_MVC.Repository
             return true;
         }
 
-        public User GetUserByEmail(string email)
+        public User? GetUserByEmail(string email) 
         {
             return _users.FirstOrDefault(u => u.Email == email);
         }

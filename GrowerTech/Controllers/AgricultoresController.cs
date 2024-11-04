@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GrowerTech_MVC.Models;
 using GrowerTech_MVC.Persistencia;
@@ -28,13 +26,13 @@ namespace _2TDSPM.Controllers
         // GET: Agricultores/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return NotFound();
             }
 
             var agricultor = await _context.Agricultores
-                .FirstOrDefaultAsync(m => m.AgricultorId == id);
+                .FirstOrDefaultAsync(m => m.Id == id.Value);
             if (agricultor == null)
             {
                 return NotFound();
@@ -48,9 +46,11 @@ namespace _2TDSPM.Controllers
         {
             return View();
         }
+
+        // POST: Agricultores/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AgricultorId,Nome,Escala, Endereço")] Agricultor agricultor)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Escala,Endereco")] Agricultor agricultor)
         {
             if (ModelState.IsValid)
             {
@@ -61,14 +61,15 @@ namespace _2TDSPM.Controllers
             return View(agricultor);
         }
 
+        // GET: Agricultores/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return NotFound();
             }
 
-            var agricultor = await _context.Agricultores.FindAsync(id);
+            var agricultor = await _context.Agricultores.FindAsync(id.Value);
             if (agricultor == null)
             {
                 return NotFound();
@@ -79,9 +80,9 @@ namespace _2TDSPM.Controllers
         // POST: Agricultores/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AgricultorId,Nome,Escala, Endereço")] Agricultor agricultor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Escala,Endereco")] Agricultor agricultor)
         {
-            if (id != agricultor.AgricultorId)
+            if (id != agricultor.Id)
             {
                 return NotFound();
             }
@@ -95,7 +96,7 @@ namespace _2TDSPM.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AgricultorExists(agricultor.AgricultorId))
+                    if (!AgricultorExists(agricultor.Id))
                     {
                         return NotFound();
                     }
@@ -112,13 +113,13 @@ namespace _2TDSPM.Controllers
         // GET: Agricultores/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (!id.HasValue)
             {
                 return NotFound();
             }
 
             var agricultor = await _context.Agricultores
-                .FirstOrDefaultAsync(m => m.AgricultorId == id);
+                .FirstOrDefaultAsync(m => m.Id == id.Value);
             if (agricultor == null)
             {
                 return NotFound();
@@ -136,15 +137,15 @@ namespace _2TDSPM.Controllers
             if (agricultor != null)
             {
                 _context.Agricultores.Remove(agricultor);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AgricultorExists(int id)
         {
-            return _context.Agricultores.Any(e => e.AgricultorId == id);
+            return _context.Agricultores.Any(e => e.Id == id);
         }
     }
 }

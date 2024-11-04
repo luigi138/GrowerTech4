@@ -17,59 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GrowerTech_MVC
 build_property.RootNamespace = GrowerTech_MVC
-build_property.ProjectDir = D:\GrowerTech\GrowerTech4-1\GrowerTech\
+build_property.ProjectDir = d:\GrowerTech\GrowerTech4-1\GrowerTech\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GrowerTech\GrowerTech4-1\GrowerTech
+build_property.MSBuildProjectDirectory = d:\GrowerTech\GrowerTech4-1\GrowerTech
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Account/Register.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Agricultores/Index.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Agricultores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdyaWN1bHRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Dashboard.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NDbGltYXRpY29zXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Details.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NDbGltYXRpY29zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Index.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/DadosClimaticos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NDbGltYXRpY29zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Home/Index.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Sensores/Index.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Sensores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Shared/Error.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Shared/_Layout.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Users/Index.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/_ViewImports.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GrowerTech/GrowerTech4-1/GrowerTech/Views/_ViewStart.cshtml]
+[d:/GrowerTech/GrowerTech4-1/GrowerTech/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

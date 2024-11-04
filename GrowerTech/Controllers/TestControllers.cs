@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Oracle.ManagedDataAccess.Client;
 using System.Collections.Generic;
 using System;
@@ -12,10 +13,9 @@ namespace YourNamespace.Controllers
 
         public TestController(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("OracleFIAP");
+            _connectionString = configuration.GetConnectionString("OracleFIAP") ?? throw new ArgumentNullException("OracleFIAP connection string not found.");
         }
 
-        
         public IActionResult Index()
         {
             try
@@ -23,21 +23,22 @@ namespace YourNamespace.Controllers
                 using (var connection = new OracleConnection(_connectionString))
                 {
                     connection.Open();
-                    var command = new OracleCommand("SELECT * FROM AGRICULTORES", connection);
-                    var reader = command.ExecuteReader();
-
-                    var result = new List<string>();
-                    while (reader.Read())
+                    using (var command = new OracleCommand("SELECT * FROM AGRICULTORES", connection))
+                    using (var reader = command.ExecuteReader())
                     {
-                        result.Add(reader["NOME"].ToString());
-                    }
+                        var result = new List<string>();
+                        while (reader.Read())
+                        {
+                            result.Add(reader["NOME"]?.ToString() ?? string.Empty);
+                        }
 
-                    return Ok(result);  
+                        return Ok(result);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);  
+                return BadRequest(ex.Message);
             }
         }
     }
