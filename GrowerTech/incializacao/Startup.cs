@@ -7,10 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Oracle.ManagedDataAccess.Client;
+using System;
 
 public class Startup
 {
@@ -23,12 +21,12 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // Oracle
+        // 配置 Oracle 数据库连接
         var connectionString = Configuration.GetConnectionString("OracleFIAP");
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseOracle(connectionString));
 
-        // Google
+        // 配置 Google 身份验证
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -45,12 +43,14 @@ public class Startup
             options.CallbackPath = "/signin-google";
         });
 
+        // 注册服务
         services.AddScoped<IUserService, UserService>();
         services.AddSingleton<MLModelService>();
-        
- 
+
+        // 启用 MVC
         services.AddControllersWithViews();
 
+        // 配置会话
         services.AddSession(options =>
         {
             options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -58,6 +58,7 @@ public class Startup
             options.Cookie.IsEssential = true;
         });
 
+        // 配置日志
         services.AddLogging(logging =>
         {
             logging.AddConfiguration(Configuration.GetSection("Logging"));

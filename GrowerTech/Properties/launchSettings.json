@@ -15,7 +15,9 @@
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5181",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GOOGLE_CLIENT_ID": "897293578100-nq0tt09v307q8785nv05f3vtgpm9ohhj.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "AIzaSyCXyTrYOHSYw5NUY2WAyw-vK83n18JBXO0"
       }
     },
     "https": {
@@ -24,14 +26,18 @@
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7112;http://localhost:5181",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GOOGLE_CLIENT_ID": "897293578100-nq0tt09v307q8785nv05f3vtgpm9ohhj.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "AIzaSyCXyTrYOHSYw5NUY2WAyw-vK83n18JBXO0"
       }
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GOOGLE_CLIENT_ID": "897293578100-nq0tt09v307q8785nv05f3vtgpm9ohhj.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "AIzaSyCXyTrYOHSYw5NUY2WAyw-vK83n18JBXO0"
       }
     }
   }

@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using GrowerTech_MVC.Models;
+using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GrowerTech_MVC.Data
 {
@@ -18,10 +22,9 @@ namespace GrowerTech_MVC.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
+
             modelBuilder.HasDefaultSchema("RM552213");
 
-            // 配置 User 实体
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("Users");
@@ -31,7 +34,6 @@ namespace GrowerTech_MVC.Data
                 entity.HasIndex(e => e.Email).IsUnique();
             });
 
-            // 配置 Agricultor 实体
             modelBuilder.Entity<Agricultor>(entity =>
             {
                 entity.ToTable("Agricultores");
@@ -41,7 +43,6 @@ namespace GrowerTech_MVC.Data
                 entity.Property(e => e.Endereco).IsRequired();
             });
 
-            // 配置 Sensor 实体
             modelBuilder.Entity<Sensor>(entity =>
             {
                 entity.ToTable("Sensores");
@@ -50,7 +51,6 @@ namespace GrowerTech_MVC.Data
                 entity.Property(e => e.Localizacao).IsRequired();
             });
 
-            // 配置 DadoClimatico 实体
             modelBuilder.Entity<DadoClimatico>(entity =>
             {
                 entity.ToTable("DadosClimaticos");
@@ -64,50 +64,33 @@ namespace GrowerTech_MVC.Data
 
         public override int SaveChanges()
         {
-            var entries = ChangeTracker
-                .Entries()
-                .Where(e => e.Entity is BaseEntity && (
-                    e.State == EntityState.Added
-                    || e.State == EntityState.Modified));
-
-            foreach (var entityEntry in entries)
-            {
-                if (entityEntry.State == EntityState.Added && entityEntry.Entity is BaseEntity entity)
-                {
-                    entity.CreatedAt = DateTime.UtcNow;
-                }
-                
-                if (entityEntry.Entity is BaseEntity entityBase)
-                {
-                    entityBase.UpdatedAt = DateTime.UtcNow;
-                }
-            }
-
+            UpdateTimestamps();
             return base.SaveChanges();
         }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
+            UpdateTimestamps();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
+        private void UpdateTimestamps()
+        {
             var entries = ChangeTracker
                 .Entries()
-                .Where(e => e.Entity is BaseEntity && (
-                    e.State == EntityState.Added
-                    || e.State == EntityState.Modified));
+                .Where(e => e.Entity is BaseEntity && 
+                            (e.State == EntityState.Added || e.State == EntityState.Modified));
 
             foreach (var entityEntry in entries)
             {
-                if (entityEntry.State == EntityState.Added && entityEntry.Entity is BaseEntity entity)
+                var entity = (BaseEntity)entityEntry.Entity;
+                entity.UpdatedAt = DateTime.UtcNow;
+
+                if (entityEntry.State == EntityState.Added)
                 {
                     entity.CreatedAt = DateTime.UtcNow;
                 }
-                
-                if (entityEntry.Entity is BaseEntity entityBase)
-                {
-                    entityBase.UpdatedAt = DateTime.UtcNow;
-                }
             }
-
-            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }
