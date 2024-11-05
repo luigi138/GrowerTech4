@@ -1,7 +1,8 @@
-
 using GrowerTech_MVC.DTO;
 using GrowerTech_MVC.Models;
 using GrowerTech_MVC.Repository;
+using System;
+using System.Collections.Generic;
 
 namespace GrowerTech_MVC.Services
 {
@@ -23,10 +24,11 @@ namespace GrowerTech_MVC.Services
         {
             var agricultor = new Agricultor
             {
-                Nome = agricultorDTO.Nome,
-                Escala = agricultorDTO.Escala,
-                Endereco = agricultorDTO.Endereco
+                Nome = agricultorDTO.Nome ?? string.Empty,
+                Escala = agricultorDTO.Escala ?? string.Empty,
+                Endereco = agricultorDTO.Endereco ?? string.Empty
             };
+
             _repository.AddAgricultor(agricultor);
         }
     }

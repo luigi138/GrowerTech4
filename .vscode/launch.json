@@ -1,7 +1,28 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // 使用 IntelliSense 了解可能的属性。
+    // 鼠标悬停可以查看现有属性的说明。
+    // 详细信息，请访问 https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)", // 配置名称，可在调试时选择此名称启动调试
+            "type": "coreclr", // 使用 .NET Core CLR 调试
+            "request": "launch", // 表示启动新进程
+            "preLaunchTask": "build", // 在启动调试前构建项目
+            "program": "${workspaceFolder}/bin/Debug/net6.0/GrowerTech_MVC.dll", // 指向编译后的 .dll 文件
+            "args": [], // 启动时的参数
+            "cwd": "${workspaceFolder}", // 工作目录，通常是项目根目录
+            "stopAtEntry": false, // 是否在程序入口处停止
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)" // 自动打开 URL
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development" // 设置环境变量，可以改为 "Production" 或 "Staging"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views" // 映射视图文件，便于调试
+            }
+        }
+    ]
 }

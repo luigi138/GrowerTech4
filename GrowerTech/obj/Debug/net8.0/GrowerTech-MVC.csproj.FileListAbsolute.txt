@@ -256,3 +256,4 @@ d:\GrowerTech\GrowerTech4-1\GrowerTech\obj\Debug\net8.0\refint\GrowerTech-MVC.dl
 d:\GrowerTech\GrowerTech4-1\GrowerTech\obj\Debug\net8.0\GrowerTech-MVC.pdb
 d:\GrowerTech\GrowerTech4-1\GrowerTech\obj\Debug\net8.0\GrowerTech-MVC.genruntimeconfig.cache
 d:\GrowerTech\GrowerTech4-1\GrowerTech\obj\Debug\net8.0\ref\GrowerTech-MVC.dll
+d:\GrowerTech\GrowerTech4-1\GrowerTech\bin\Debug\net8.0\package-lock.json
