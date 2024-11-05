@@ -1,10 +1,12 @@
-    using GrowerTech_MVC.Models;
-    using GrowerTech_MVC.Services;
+using GrowerTech_MVC.Models;
 
-    namespace GrowerTech_MVC.Services
+namespace GrowerTech_MVC.Services
+{
+    public interface IUserService
     {
-        public interface IUserService
-        {
-            (bool Success, string Message) SaveUser(User user);
-        }
+        (bool Success, string Message) SaveUser(User user);
+
+        // 保留一个 Authenticate 方法，用于用户登录
+        (bool Success, string Message) Authenticate(UserLoginModel model);
     }
+}
